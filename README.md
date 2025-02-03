@@ -13,11 +13,11 @@ You run one playbook to set up a node or update version. Here is a few examples:
 
 ```bash
 # Mainnet: upgrade version
-ansible-playbook ethereum.yml -e "target=ethereum_mainnet"
+ansible-playbook playbooks/ethereum.yml -e "target=ethereum_mainnet"
 # Testnet: upgrade version
-ansible-playbook ethereum.yml -e "target=ethereum_testnet"
+ansible-playbook playbooks/ethereum.yml -e "target=ethereum_testnet"
 # Initial full installation
-ansible-playbook ethereum.yml -e "target=ethereum_mainnet mode=full"
+ansible-playbook playbooks/ethereum.yml -e "target=ethereum_mainnet mode=full"
 ```
 
 ## Setup

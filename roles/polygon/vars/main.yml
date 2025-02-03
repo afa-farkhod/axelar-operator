@@ -10,5 +10,5 @@ heimdall_config_port_changes:
   'proxy_app = "tcp://127.0.0.1:26658"': 'proxy_app = "tcp://127.0.0.1:{{ custom_port_prefix }}58"'
   'prometheus_listen_addr = ":26660"': 'prometheus_listen_addr = ":{{ custom_port_prefix }}61"'
 heimdall_config_config_changes:
-  '^eth_rpc_url =': 'eth_rpc_url = "http://localhost:8545"'
+  '^eth_rpc_url =': 'eth_rpc_url = "http://localhost:{{ eth_rpc_port }}"'
   '^bor_rpc_url =': 'bor_rpc_url = "http://localhost:{{ bor_http_port }}"'
